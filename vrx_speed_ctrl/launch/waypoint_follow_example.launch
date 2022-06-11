@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<launch>
+  <arg name="namespace" default="wamv"/>
+  <arg name="gui" default="true"/>
+  <arg name="pid_plot" default="false"/>
+
+  <include file="$(find vrx_gazebo)/launch/wayfinding.launch">
+  	<arg name="gui" value="$(arg gui)"/>
+  </include>
+
+  <include file="$(find wamv_gazebo)/launch/localization_example.launch"/>
+
+  <include file="$(find vrx_speed_ctrl)/launch/pid_ros.launch">
+  	<arg name="pid_debug" value="$(arg pid_debug)"/>
+  </include>
+
+</launch>

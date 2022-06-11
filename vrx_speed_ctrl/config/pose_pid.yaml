@@ -1,0 +1,12 @@
+pose_heading:
+  D: 0.0
+  I: 0.0
+  Imax: 1.0
+  Imin: -1.0
+  P: 0.1
+pose_distance:
+  D: 0.0
+  I: 0.01
+  Imax: 0.5
+  Imin: -0.5
+  P: 0.1
