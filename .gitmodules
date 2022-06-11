@@ -1,0 +1,3 @@
+[submodule "openai_examples_projects"]
+	path = openai_examples_projects
+	url = https://bitbucket.org/theconstructcore/openai_examples_projects.git
