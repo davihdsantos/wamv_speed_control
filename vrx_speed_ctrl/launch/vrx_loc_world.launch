@@ -3,6 +3,7 @@
   <arg name="namespace" default="wamv"/>
   <arg name="gui" default="true"/>
   <arg name="pid_debug" default="false"/>
+  <arg name="pid_plot" default="false"/>
 
   <include file="$(find vrx_gazebo)/launch/vrx.launch">
   	<arg name="gui" value="$(arg gui)"/>
@@ -17,8 +18,13 @@
 
   <include file="$(find wamv_gazebo)/launch/localization_example.launch"/>
 
-  <include file="$(find vrx_speed_ctrl)/launch/pid_ros.launch">
-  	<arg name="pid_debug" value="$(arg pid_debug)"/>
+  <include file="$(find vrx_speed_ctrl)/launch/speed_control.launch">
+    <arg name="namespace" value="$(arg namespace)"/>
+    <arg name="pid_plot" value="$(arg pid_plot)"/>
   </include>
+
+  <!--include file="$(find vrx_speed_ctrl)/launch/pid_ros.launch">
+  	<arg name="pid_debug" value="$(arg pid_debug)"/>
+  </include-->
 
 </launch>
