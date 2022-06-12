@@ -1,6 +1,6 @@
 # wamv_speed_control
 
-This package provides a simple speed control (surge, sway, yaw) for wamv T configuration, providing a cmd_vel topic as an interface. This is the basic functionality to use some high-level navigation packages, such as the [navigation_stack](http://wiki.ros.org/navigation).
+This package provides a simple speed control (surge, sway, yaw) for wamv T configuration, providing a cmd_vel topic as an interface. This is the basic functionality needed to use some high-level navigation packages, such as the [navigation_stack](http://wiki.ros.org/navigation).
 
 > before running the tests, build and source your vrx environment. This stack runs with the [vrx 1.3.0](https://github.com/osrf/vrx/tree/1.3.0)
 
