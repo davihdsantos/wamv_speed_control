@@ -10,7 +10,7 @@
 
   <include file="$(find wamv_gazebo)/launch/localization_example.launch"/>
 
-  <include file="$(find vrx_speed_ctrl)/launch/speed.launch">
+  <include file="$(find vrx_speed_ctrl)/launch/speed_control.launch">
     <arg name="namespace" value="$(arg namespace)"/>
     <arg name="pid_plot" value="$(arg pid_plot)"/>
   </include>
